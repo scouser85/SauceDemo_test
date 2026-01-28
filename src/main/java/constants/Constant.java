@@ -13,12 +13,13 @@ public class Constant {
         public static final Duration EXPLICIT_WAIT = Duration.ofSeconds(10);
     }
 
-    // URL-адреса страниц, с которыми работают тесты
+    // URL-адрес страницы, с которой работают тесты
     public static class Urls {
         // Страница логина сайта, который мы тестируем
         public static final String SAUCEDEMO_LOGIN_PAGE = "https://www.saucedemo.com/";
     }
 
+    // Переменные логин и пароль, для того чтобы в тестах был динамический ввод, а не статический (hardcoded)
     public static class Credentials {
 
         public static String Login = "";
