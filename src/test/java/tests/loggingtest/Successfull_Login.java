@@ -27,5 +27,7 @@ public class Successfull_Login extends BaseTest {
         // Проверяем, открылся ли после логина  нужный URL
         String currentUrl = driver.getCurrentUrl();
         Assert.assertTrue(currentUrl.contains("inventory"), "Переход после логина не выполнен.");
+
+        driver.quit();
     }
 }
