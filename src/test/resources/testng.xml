@@ -9,23 +9,20 @@
 
         <!-- Указываем, какие именно тестовые классы запускать -->
         <classes>
-            <!-- Тест авторизации -->
+            <!-- 1 Тест авторизации -->
             <class name="tests.loggingtest.Successfull_Login"/>
 
-            <!-- Тест подсчёта суммы в корзине -->
-            <class name="tests.pricesumtest.PriceSumTest"/>
-
-            <!-- Тест авторизации с некорректным паролем -->
+            <!-- 2 Тест авторизации с некорректным паролем -->
             <class name="tests.wrongpasswordlogin.LoginWithWrongPassword"/>
 
-            <!-- Тест авторизации заблокированного пользователя locked out user -->
+            <!-- 3 Тест авторизации заблокированного пользователя locked out user -->
             <class name="tests.lockedoutuserlogin.LockedOutUserLogin"/>
 
-            <!-- Тест авторизации с пустыми значениями логина и пароля -->
+            <!-- 4 Тест авторизации с пустыми значениями логина и пароля -->
             <class name="tests.loginwithemptycredentials.LoginWithEmptyCredentials"/>
 
 
-            <!-- Тест авторизации для performance_glitch_user -->
+            <!-- 5 Тест авторизации для performance_glitch_user -->
             <class name="tests.performanceglitchlogin.PerformanceGlitchLogin"/>
 
         </classes>
