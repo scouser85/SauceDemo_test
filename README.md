@@ -8,7 +8,12 @@
 5. Логин пользователем performance_glitch_user - для проверки успешного логина при различных задержках (название теста PerformanceGlitchLogin)
 
 Язык программирования: Java
+
 Фреймворки и библиотеки: Selenium WebDriver, TestNG
+
 Отчетность: Allure Reports
+
 Сборщик проектов: Maven
+
 Паттерн проектирования: Page Object Model (POM)
+
