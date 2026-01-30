@@ -14,7 +14,7 @@ public class Successfull_Login extends BaseTest {
 
     @Test
     public void loginTest() {
-        // Открываем страницу логина
+        // Открываем страницу для логина
         basePage.open(SAUCEDEMO_LOGIN_PAGE);
 
         // Присваиваваем значения логина и пароля

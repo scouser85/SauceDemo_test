@@ -1,0 +1,1 @@
+{"uuid":"9f20c88b-2c64-443e-9823-5444e074aa21","name":"Login and Price Tests","children":["e1619198-7855-47a6-bdd3-0bfa51fbcc65"],"befores":[],"afters":[{"name":"clearCookiesAndLocalStorage","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1769628987559,"stop":1769628987582}],"start":1769628986622,"stop":1769628987583}

@@ -11,14 +11,14 @@ public class BasicActions {
         // Указываем путь к ChromeDriver
         System.setProperty("webdriver.chrome.driver", "C:\\tools\\chromedriver.exe");
 
-        // Настраиваем запуск Chrome в режиме инкогнито
+        // запуск Chrome в режиме инкогнито
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--incognito");
 
-        // Создаём драйвер с этими настройками
+        // Создание драйвера
         WebDriver driver = new ChromeDriver(chromeOptions);
 
-        // Разворачиваем окно и устанавливаем неявное ожидание
+        // Разворачиваем окно в полный экран и устанавливаем неявное время ожидания
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 
