@@ -13,7 +13,7 @@ import pages.showcase.SaucedemoShowcasePage;
 import static basic.Config.CLEAR_COOKIES_AND_STORAGE;
 import static basic.Config.HOLD_BROWSER_OPEN;
 
-// Базовый класс тестов — от него наследуются логин-тест, тест корзины и др.
+// Базовый класс тестов — от него наследуются все остальные тесты
 public class BaseTest {
 
     protected WebDriver driver = BasicActions.createDriver();
@@ -22,7 +22,7 @@ public class BaseTest {
     protected SaucedemoShowcasePage saucedemoShowcasePage = new SaucedemoShowcasePage(driver);
     protected CartPage cartPage = new CartPage(driver);
 
-    // После каждого теста — очистка cookies и sessionStorage
+    // очистка cookies и sessionStorage после выполнения теста
     @AfterTest
     public void clearCookiesAndLocalStorage() {
         if (CLEAR_COOKIES_AND_STORAGE) {
@@ -33,7 +33,7 @@ public class BaseTest {
     }
 
 
-   // После всех тестов — закрытие браузера
+   // закрытие браузера после выполнения всех тестов
    @AfterSuite
    public void clear() {
        if (!HOLD_BROWSER_OPEN) {

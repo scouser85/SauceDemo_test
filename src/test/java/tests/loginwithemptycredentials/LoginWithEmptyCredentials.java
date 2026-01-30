@@ -16,7 +16,7 @@ public class LoginWithEmptyCredentials extends BaseTest {
         // Открываем страницу логина
         basePage.open(SAUCEDEMO_LOGIN_PAGE);
 
-        // Присваиваем пустые значения логина и пароля
+        // Присваиваем пустые значения для логина и пароля
         Login = "";
         Password = "";
 
