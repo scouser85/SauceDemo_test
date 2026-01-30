@@ -15,12 +15,12 @@ public class BasePage {
         this.driver = driver;
     }
 
-    // Метод для открытия нужной страницы
+    // Метод для открытия страницы
     public void open(String url) {
         driver.get(url);
     }
 
-    // Метод для ожидания появления элемента на экране
+    // Метод для ожидания элемента на странице
     public WebElement waitElementIsVisible(WebElement element) {
         new WebDriverWait(driver, EXPLICIT_WAIT).until(ExpectedConditions.visibilityOf(element));
         return element;

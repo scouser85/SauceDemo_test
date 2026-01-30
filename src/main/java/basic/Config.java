@@ -7,7 +7,7 @@ public class Config {
     public static final String OS_AND_BROWSER = "win-chrome";
 
     // перед каждым тестом будут очищаться cookies и локальное хранилище браузера
-    public static final Boolean CLEAR_COOKIES_AND_STORAGE = true;
+    public static final Boolean CLEAR_COOKIES_AND_STORAGE = false;
 
     // Если false — браузер будет закрываться после завершения теста
     // Если true — браузер останется открытым

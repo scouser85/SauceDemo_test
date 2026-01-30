@@ -27,6 +27,8 @@ public class LoginWithWrongPassword extends BaseTest {
         String currentUrl = driver.getCurrentUrl();
         Assert.assertFalse(currentUrl.contains("inventory"), "Произошел логин с неверным паролем!");
 
+        driver.close();
+
 
 
     }
